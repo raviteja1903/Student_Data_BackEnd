@@ -1,8 +1,8 @@
-// import express from "express";
+import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import studentRoutes from "./routes/studentRoutes.js";
-import connectDB from "./db.js";
+import connectDB from "./config/db.js"; // <-- Correct path
 
 dotenv.config();
 const app = express();
